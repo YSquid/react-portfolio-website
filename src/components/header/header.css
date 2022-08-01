@@ -1,4 +1,42 @@
 header {
     height: 100vh;
     padding-top: 7rem;
+    overflow: hidden;
 }
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* CTA STYLING */
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* HEADERSOCIALS STYLING */
+
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+/*creates the little line below the social links*/
+.header__socials::after {
+    content: '';
+    width: 3px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+
