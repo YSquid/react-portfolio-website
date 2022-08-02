@@ -6,7 +6,7 @@ header {
 
 .header__container {
     text-align: center;
-    height: 100%;
+    height: 80%;
     position: relative;
 }
 
@@ -42,10 +42,51 @@ header {
 /*MAIN IMAGE*/
 
 .me {
-    background-color: var(--color-primary);
+    margin-top: 3rem;
     width: 22rem;
     height: 30rem;
     position: absolute;
     left: calc(50% - 11rem);
+    border-radius: 5rem;
+    top: 11rem;
 }
 
+/*jump to contact style*/
+
+.jump__contact {
+    position: flex;
+    top: 75%;
+    left: calc(50% - 4rem);
+}
+
+/* ======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh
+    }
+
+}
+
+/* ======== MEDIA QUERIES (SMALL DEVICES) ======== */
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh
+    }
+
+    .header__socials {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        align-items: center;
+        left: calc(50% - 3rem);
+    }
+
+    .header__socials::after {
+        content: '';
+        width: 3px;
+        height: 2rem;
+        background: var(--color-bg);
+    }
+}
