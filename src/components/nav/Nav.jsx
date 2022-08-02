@@ -12,8 +12,6 @@ const Nav = () => {
       <a href='#experience'><AiOutlineFundProjectionScreen /></a>
       <a href='#services'><MdComputer /></a>
       <a href='#contact'><AiOutlineContacts /></a>
-      
-
     </nav>
   )
 }

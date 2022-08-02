@@ -1,0 +1,19 @@
+/*width max content means it will only be as wide as the content of itself - in this case the 5 nav icons*/
+
+
+nav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed; /* Set the navbar to fixed position */
+    display: block;
+    z-index: 2; 
+    width: max-content; /*adjusts to fit contents*/
+    padding: 0.7rem 1.7rem;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 2rem;
+    display: flex; /*sets nav to a flexbox - placing it later just before gap seemed to make the gap property work -  why?*/
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
