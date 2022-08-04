@@ -1,0 +1,8 @@
+section {
+    display: flex;
+}
+
+.about__me__image {
+    width: 10rem;
+    height: auto;
+}
