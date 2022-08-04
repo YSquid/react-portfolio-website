@@ -11,7 +11,7 @@ const About = () => {
     <h5>Get To Know</h5>
     <h2>About me</h2>
 
-    <div className="contaier about__container"></div>
+    <div className="contaier about__container">
       <div className="about__me">
         <div className="about__me__image">
           <img src={ME}alt="About Me" />
@@ -34,14 +34,15 @@ const About = () => {
 
         <article className="about__card">
           <RiFolderChartFill className='about__icon' />
-          <h5>Clients</h5>
-          <small>Across Canada & U.S.</small>
+          <h5>Projects</h5>
+          <small>10+ websites</small>
         </article>
 
 
       </div>
 
       </div>
+    </div>
     </section>
   )
 }

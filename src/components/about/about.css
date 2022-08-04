@@ -1,8 +1,18 @@
 section {
+    display: relative;
+}
+
+.about__container {
     display: flex;
+    justify-content: center;
 }
 
 .about__me__image {
     width: 10rem;
     height: auto;
+}
+
+.about__content {
+    display: flex;
+    justify-content: center;
 }
