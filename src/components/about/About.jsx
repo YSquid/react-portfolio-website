@@ -11,7 +11,7 @@ const About = () => {
     <h5>Get To Know</h5>
     <h2>About me</h2>
 
-    <div className="contaier about__container">
+    <div className="container about__container">
       <div className="about__me">
         <div className="about__me__image">
           <img src={ME}alt="About Me" />
@@ -19,27 +19,30 @@ const About = () => {
       </div>
 
       <div className="about__content">
-      <div className="about__cards">
-        <article className="about__card">
-          <BsDiagram3Fill className='about__icon'/>
-          <h5>Experience</h5>
-          <small>1 year</small>
-        </article>
+        <div className="about__cards">
+          <article className="about__card">
+            <BsDiagram3Fill className='about__icon'/>
+            <h5>Experience</h5>
+            <small>1 year</small>
+          </article>
 
-        <article className="about__card">
-          <FaUserFriends className='about__icon' />
-          <h5>Clients</h5>
-          <small>Across Canada & U.S.</small>
-        </article>
+          <article className="about__card">
+            <FaUserFriends className='about__icon' />
+            <h5>Clients</h5>
+            <small>Across Canada & U.S.</small>
+          </article>
 
-        <article className="about__card">
-          <RiFolderChartFill className='about__icon' />
-          <h5>Projects</h5>
-          <small>10+ websites</small>
-        </article>
+          <article className="about__card">
+            <RiFolderChartFill className='about__icon' />
+            <h5>Projects</h5>
+            <small>10+ websites</small>
+          </article>
 
+        <p>I am a self taught developer with 1 year experience building custom websites.</p>
 
-      </div>
+        <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+
+        </div>
 
       </div>
     </div>
