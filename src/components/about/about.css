@@ -72,8 +72,7 @@
 .about__content p {
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column: 1 / 4;
 }
 
 .btn {
