@@ -26,7 +26,7 @@ mostly makes things neutral looking and ready for more specific css*/
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
-  --container-width-ms: 90%;
+  --container-width-sm: 90%;
 }
 
 /*smooth scrolling behavior on all html elements*/

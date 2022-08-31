@@ -35,7 +35,7 @@
 
 .about__cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
 }
 
@@ -89,9 +89,17 @@
         gap: 0;
     }
 
+    .about__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        background-color: red;
+    }
+
     .about__me {
         width: 50%;
         margin: 2rem auto 4rem;
+        text-align: center;
     }
 
     .about__content p {
@@ -103,22 +111,26 @@
 /* ======== MEDIA QUERIES (SMALL DEVICES) ======== */
 
 @media screen and (max-width: 600px) {
-    .about__me {
-        width: 65%;
-        margin-left: 3rem;
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 0;
+        background-color: black;
+    }
+
+    .about__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        background-color: orange;
     }
 
     .about__cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
-    .about__content {
-        text-align: center;
-    }
-
-    .about__content {
-        margin: 1.5rem 0;
+    .about__content p {
+        margin: 1rem 0 1.5rem;
     }
 
 }
