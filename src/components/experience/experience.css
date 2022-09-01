@@ -44,7 +44,6 @@
 @media screen and (max-width: 1024px) {
  .experience__container {
     grid-template-columns: 1fr;
-    background-color: red;
  }
 
  .experience__container > div {
@@ -59,7 +58,6 @@
 @media screen and (max-width: 600px) {
     .experience__container {
         gap: 1rem;
-        background-color: black;
     }
 
     .experience__container > div {
