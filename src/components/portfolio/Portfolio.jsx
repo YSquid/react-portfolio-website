@@ -1,16 +1,12 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/portfolio1.jpg";
-import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
-import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.jpg";
+import redditClone from '../../assets/redditClient.png'
+import mrkCBD from '../../assets/mrkCBD.png'
 
 const data = [
   {
     id: 1,
-    image: IMG1,
+    image: redditClone,
     title: 'Item1',
     github: 'https://github.com/Ysquid',
     demo: 'https://dribbble.com'
@@ -18,7 +14,7 @@ const data = [
   },
   {
     id: 2,
-    image: IMG2,
+    image: mrkCBD,
     title: 'Item2',
     github: 'https://github.com',
     demo: 'https://dribbble.com'

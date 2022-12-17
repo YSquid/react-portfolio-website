@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/about-me-avatar.png'
+import ME from '../../assets/me.jpg'
 import {BsDiagram3Fill} from 'react-icons/bs'
 import {FaUserFriends} from 'react-icons/fa'
 import {RiFolderChartFill} from 'react-icons/ri'
