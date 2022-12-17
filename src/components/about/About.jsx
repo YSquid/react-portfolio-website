@@ -8,6 +8,7 @@ import { RiFolderChartFill } from "react-icons/ri";
 const About = () => {
   return (
     <section id="about">
+      <div id="about-spacer"></div>
       <h2>About me</h2>
 
       <div className="container about__container">

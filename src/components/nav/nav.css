@@ -4,15 +4,15 @@
 nav {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.3);
-    position: fixed; /* Set the navbar to fixed position */
+    position: fixed; 
     display: block;
     z-index: 2; 
-    width: max-content; /*adjusts to fit contents*/
+    width: max-content; 
     padding: 0.7rem 1.7rem;
     transform: translateX(-50%);
     left: 50%;
     bottom: 2rem;
-    display: flex; /*sets nav to a flexbox - placing it later just before gap seemed to make the gap property work -  why?*/
+    display: flex; 
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
@@ -36,3 +36,10 @@ nav a.active {
     background: var(--color-primary-variant);
     color: var(--color-white);
 }
+
+@media only screen and (min-height: 1000px) {
+    nav {
+        font-size: 2rem;
+    }
+}
+
