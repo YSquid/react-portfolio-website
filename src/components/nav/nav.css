@@ -11,7 +11,7 @@ nav {
     padding: 0.7rem 1.7rem;
     transform: translateX(-50%);
     left: 50%;
-    bottom: 1rem;
+    bottom: 2rem;
     display: flex; /*sets nav to a flexbox - placing it later just before gap seemed to make the gap property work -  why?*/
     gap: 0.8rem;
     border-radius: 3rem;
