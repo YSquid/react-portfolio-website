@@ -55,13 +55,6 @@ body {
 }
 
 /* ============================== GENERAL STYLES ============================== */
-
-.container {
-  width: var(--container-width-lg);
-  margin: 0 auto;
-}
-
-/*notice we can define the style for multiple elements inline*/
 h1,
 h2,
 h3,
@@ -77,6 +70,7 @@ h1 {
 section {
   margin-top: 8rem;
   height: 100vh;
+  width: 100vw;
 }
 
 /*every section will have an h2 and an h5 as a direct child - this is how we target that*/
@@ -135,9 +129,9 @@ img {
 /* ======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
 
 @media screen and (max-width: 1024px) {
-  .container {
+  /* .container {
     width: var(--container-width-md);
-  }
+  } */
 
   section {
     margin-top: 6rem;
@@ -147,9 +141,9 @@ img {
 /* ======== MEDIA QUERIES (SMALL DEVICES) ======== */
 
 @media screen and (max-width: 600px) {
-  .container {
+  /* .container {
     width: var(--container-width-sm);
-  }
+  } */
 
   section > h2 {
     margin-bottom: 2rem;

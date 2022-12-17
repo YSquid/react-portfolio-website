@@ -1,19 +1,31 @@
 header {
     height: 100vh;
-    padding-top: 7rem;
-    overflow: hidden;
+    width: 100vw;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .header__container {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 80%;
-    position: relative;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 /* CTA STYLING */
 
 .cta {
-    margin-top: 2.5rem;
+    /* margin-top: 2.5rem; */
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -23,20 +35,11 @@ header {
 
 .header__socials {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 0.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
-}
-
-/*creates the little line below the social links*/
-.header__socials::after {
-    content: '';
-    width: 3px;
-    height: 2rem;
-    background: var(--color-primary);
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 /*MAIN IMAGE*/
@@ -62,46 +65,30 @@ header {
 /* ======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
 
 @media screen and (max-width: 1024px) {
-    header {
-        height: 100vh
-    }
+  
 
-    .header__socials {
+    /* .header__socials {
         display: flex;
         flex-direction: row;
         position: absolute;
         align-items: center;
         left: calc(50% - 3rem);
-    }
+    } */
 
-    .header__socials::after {
-        content: '';
-        width: 3px;
-        height: 2rem;
-        background: var(--color-bg);
-    }
 
 }
 
 /* ======== MEDIA QUERIES (SMALL DEVICES) ======== */
 
 @media screen and (max-width: 600px) {
-    header {
-        height: 100vh
-    }
+    
 
-    .header__socials {
+    /* .header__socials {
         display: flex;
         flex-direction: row;
         position: absolute;
         align-items: center;
         left: calc(50% - 3rem);
-    }
+    } */
 
-    .header__socials::after {
-        content: '';
-        width: 3px;
-        height: 2rem;
-        background: var(--color-bg);
-    }
 }
