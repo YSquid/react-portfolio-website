@@ -22,6 +22,14 @@ header {
     margin-bottom: 2rem;
 }
 
+.title h5 {
+    font-size: 1.5rem;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+}
+
 /* CTA STYLING */
 
 .cta {
