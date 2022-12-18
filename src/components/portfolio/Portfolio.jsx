@@ -1,12 +1,12 @@
 import React from "react";
 import "./portfolio.css";
-import redditClone from "../../assets/redditClient.png";
+import redditThumbnail from "../../assets/redditThumbnail.png";
 import mrkCBD from "../../assets/mrkCBD.png";
 
 const data = [
   {
     id: 1,
-    image: redditClone,
+    image: redditThumbnail,
     title: "Reddit Clone",
     github: "https://github.com/Ysquid",
     site: "https://dribbble.com",
@@ -41,10 +41,20 @@ const Portfolio = () => {
                 })}
               </ul>
               <div className="portfolio__item-cta">
-                <a href={github} className="btn" target="_blank">
+                <a
+                  href={github}
+                  className="btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   GitHub
                 </a>
-                <a href={site} className="btn btn-primary" target="_blank">
+                <a
+                  href={site}
+                  className="btn btn-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   View Site
                 </a>
               </div>
