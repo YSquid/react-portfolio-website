@@ -2,10 +2,11 @@ import React from "react";
 import "./contact.css";
 import { MdEmail } from "react-icons/md";
 import { BsLinkedin, BsPhoneFill } from "react-icons/bs";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const [sentStatus, setSentStatus] = useState(false);
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -16,9 +17,8 @@ const Contact = () => {
       form.current,
       "Iv-UOvg-qxM985Ac3"
     );
-
-    e.target.reset()
-
+    e.target.reset();
+    setSentStatus(true);
   };
   return (
     <section id="contact">
@@ -54,22 +54,36 @@ const Contact = () => {
           </article>
         </div>
 
-        <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Full Name"
-            required
-          />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            rows="7"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <button className="btn btn-primary">Send Message</button>
-        </form>
+        {sentStatus === false ? (
+          <form ref={form} onSubmit={sendEmail}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Full Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              rows="7"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button className="btn btn-primary">Send Message</button>
+          </form>
+        ) : (
+          <div>
+            <p>
+              Thanks for your interest! I strive to respond to all messages within
+              48 hours.
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );
