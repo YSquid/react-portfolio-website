@@ -19,23 +19,7 @@ const data = [
     github: "https://github.com/YSquid/mrk-landing",
     site: "https://mrkcbd.com/",
     tech: ["HTML5", "CSS3", "Git/GitHub"],
-  },
-  {
-    id: 2,
-    image: mrkCBD,
-    title: "CBD Brand Landing Page",
-    github: "https://github.com/YSquid/mrk-landing",
-    site: "https://mrkcbd.com/",
-    tech: ["HTML5", "CSS3", "Git/GitHub"],
-  },
-  {
-    id: 2,
-    image: mrkCBD,
-    title: "CBD Brand Landing Page",
-    github: "https://github.com/YSquid/mrk-landing",
-    site: "https://mrkcbd.com/",
-    tech: ["HTML5", "CSS3", "Git/GitHub"],
-  },
+  }
 ];
 
 const Portfolio = () => {
