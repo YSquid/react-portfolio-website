@@ -8,16 +8,32 @@ const data = [
     id: 1,
     image: redditThumbnail,
     title: "Reddit Clone",
-    github: "https://github.com/Ysquid",
-    site: "https://dribbble.com",
+    github: "https://github.com/YSquid/reddit-minimal",
+    site: "https://ak-reddit-minimal.netlify.app/",
     tech: ["React", "Redux", "HTML5", "CSS3", "Git/GitHub"],
   },
   {
     id: 2,
     image: mrkCBD,
     title: "CBD Brand Landing Page",
-    github: "https://github.com",
-    site: "https://dribbble.com",
+    github: "https://github.com/YSquid/mrk-landing",
+    site: "https://mrkcbd.com/",
+    tech: ["HTML5", "CSS3", "Git/GitHub"],
+  },
+  {
+    id: 2,
+    image: mrkCBD,
+    title: "CBD Brand Landing Page",
+    github: "https://github.com/YSquid/mrk-landing",
+    site: "https://mrkcbd.com/",
+    tech: ["HTML5", "CSS3", "Git/GitHub"],
+  },
+  {
+    id: 2,
+    image: mrkCBD,
+    title: "CBD Brand Landing Page",
+    github: "https://github.com/YSquid/mrk-landing",
+    site: "https://mrkcbd.com/",
     tech: ["HTML5", "CSS3", "Git/GitHub"],
   },
 ];
@@ -32,7 +48,9 @@ const Portfolio = () => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-img">
-                <img src={image} alt={title} />
+                <a href={site} target="_blank" rel="norefferer">
+                  <img src={image} alt={title} />
+                </a>
               </div>
               <h3>{title}</h3>
               <ul className="tech">
