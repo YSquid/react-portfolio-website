@@ -29,12 +29,12 @@ const About = () => {
             <br></br>
             <p>
               In March of 2022 I started learning programming in my spare time.
-              In September of 2022 I began dedicating myself full-time to
-              learning full-stack web development.
+              In September of 2022 I began dedicating myself full time to
+              learning full stack web development.
             </p>
             <br></br>
             <p>
-              My ultimate goal is to become a full-time professional developer.
+              My ultimate goal is to become a professional developer.
               I am open to in-person roles across Canada as well as remote
               positions.
             </p>
