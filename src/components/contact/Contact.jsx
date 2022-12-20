@@ -12,10 +12,10 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_0yqopkd",
-      "template_odoxcdi",
+      "service_ssvs6wj",
+      "template_p7tmnuo",
       form.current,
-      "Iv-UOvg-qxM985Ac3"
+      "Q8XDB0RYxa1mSXVAp"
     );
     e.target.reset();
     setSentStatus(true);
@@ -29,9 +29,9 @@ const Contact = () => {
           <article className="contact__option">
             <MdEmail className="contact-icon" />
             <h4>Email</h4>
-            <h5>ahmad.k@ysquid.tech</h5>
+            <h5>contact@ahmadkariem.com</h5>
             <a
-              href="mailto:ahmad.k@ysquid.tech"
+              href="mailto:contact@ahmadkariem.com"
               target="_blank"
               rel="noreferrer"
             >
