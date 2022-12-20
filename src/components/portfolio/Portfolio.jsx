@@ -32,7 +32,7 @@ const Portfolio = () => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-img">
-                <a href={site} target="_blank" rel="norefferer">
+                <a href={site} target="_blank" rel="noreferrer">
                   <img src={image} alt={title} />
                 </a>
               </div>

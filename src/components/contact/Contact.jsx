@@ -30,7 +30,11 @@ const Contact = () => {
             <MdEmail className="contact-icon" />
             <h4>Email</h4>
             <h5>ahmad.k@ysquid.tech</h5>
-            <a href="mailto:ahmad.k@ysquid.tech" target="_blank">
+            <a
+              href="mailto:ahmad.k@ysquid.tech"
+              target="_blank"
+              rel="noreferrer"
+            >
               Send an Email
             </a>
           </article>
@@ -39,7 +43,11 @@ const Contact = () => {
             <BsLinkedin className="contact-icon" />
             <h4>LinkedIn</h4>
             <h5>Ahmad Kariem</h5>
-            <a href="https://www.linkedin.com/in/ahmad-kariem/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/ahmad-kariem/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Send a Message on LinkedIn
             </a>
           </article>
@@ -48,7 +56,7 @@ const Contact = () => {
             <BsPhoneFill className="contact-icon" />
             <h4>Cell</h4>
             <h5>(306)-491-6395</h5>
-            <a href="tel:3064916395" target="_blank">
+            <a href="tel:3064916395" target="_blank" rel="noreferrer">
               Call or Text
             </a>
           </article>
@@ -79,8 +87,8 @@ const Contact = () => {
         ) : (
           <div>
             <p>
-              Thanks for your interest! I strive to respond to all messages within
-              48 hours.
+              Thanks for your interest! I strive to respond to all messages
+              within 48 hours.
             </p>
           </div>
         )}

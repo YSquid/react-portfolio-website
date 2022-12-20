@@ -2,7 +2,6 @@ import React from "react";
 import "./nav.css";
 import {
   AiOutlineUser,
-  AiOutlineFundProjectionScreen,
   AiOutlineHome,
   AiOutlineContacts,
 } from "react-icons/ai";
