@@ -11,7 +11,7 @@ const data = [
     github: "https://github.com/YSquid/reddit-minimal",
     site: "https://ak-reddit-minimal.netlify.app/",
     description: "A basic functionality Reddit clone built with React and Redux. Utilizes the Reddit JSON API to fetch data from Reddit.",
-    tech: ["React", "Redux", "HTML5", "CSS3", "Git/GitHub"],
+    tech: ["React", "Redux", "HTML5", "CSS3", "Git/GitHub", "Google Analytics"],
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const data = [
     github: "https://github.com/YSquid/mrk-landing",
     site: "https://mrkcbd.com/",
     description: "A one page site built with HTML and CSS for a CBD brand.",
-    tech: ["HTML5", "CSS3", "Git/GitHub"],
+    tech: ["HTML5", "CSS3", "Git/GitHub", "Google Analytics"],
   }
 ];
 
