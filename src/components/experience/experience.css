@@ -40,7 +40,6 @@
 .experience__details {
     display: flex;
     gap: 0.5rem;
-    margin-right: 1rem;
 }
 
 .experience__details-icon {
