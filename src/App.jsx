@@ -7,6 +7,9 @@ import Experience from './components/experience/Experience'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-DTNW0PWFKR');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 const App = () => {
