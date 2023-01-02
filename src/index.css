@@ -46,7 +46,6 @@ set background using the color-bg custom variable we defined in :root
 background image is imported from the assets folder
 */
 body {
-  font-family: "Lobster", cursive;
   font-family: "Poppins", sans-serif;
   background: var(--color-bg);
   color: var(--color-white);

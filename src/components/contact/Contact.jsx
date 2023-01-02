@@ -67,17 +67,20 @@ const Contact = () => {
             <input
               type="text"
               name="name"
+              id="name"
               placeholder="Your Full Name"
               required
             />
             <input
               type="email"
               name="email"
+              id="email"
               placeholder="Your Email"
               required
             />
             <textarea
               name="message"
+              id="message"
               rows="7"
               placeholder="Your Message"
               required

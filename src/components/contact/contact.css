@@ -46,6 +46,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    font-family: "Poppins", sans-serif;
 }
 
 input, textarea {
@@ -56,6 +57,18 @@ input, textarea {
     border: 2px solid var(--color-primary-variant);
     resize: none;
     color: var(--color-white)
+}
+
+#name {
+    font-family: "Poppins", sans-serif;
+}
+
+#email {
+    font-family: "Poppins", sans-serif;
+}
+
+#message {
+    font-family: "Poppins", sans-serif;
 }
 
 /* ======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
