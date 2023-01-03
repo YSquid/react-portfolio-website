@@ -2,11 +2,12 @@ import React from "react";
 import "./portfolio.css";
 import redditThumbnail from "../../assets/redditThumbnail.png";
 import mrkCBD from "../../assets/mrkCBD.png";
+import redditPreview from '../../assets/redditPreview.gif'
 
 const data = [
   {
     id: 1,
-    image: redditThumbnail,
+    image: redditPreview,
     title: "Reddit Clone",
     github: "https://github.com/YSquid/reddit-minimal",
     site: "https://ak-reddit-minimal.netlify.app/",
