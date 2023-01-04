@@ -2,6 +2,7 @@ import React from "react";
 import "./portfolio.css";
 import redditThumbnail from "../../assets/redditThumbnail.png";
 import mrkCBD from "../../assets/mrkCBD.png";
+import quoteMachine from '../../assets/quoteMachine.png'
 
 const data = [
   {
@@ -15,13 +16,22 @@ const data = [
   },
   {
     id: 2,
+    image: quoteMachine,
+    title: "Random Quote Machine",
+    github: "https://github.com/YSquid/react-quote-machine",
+    site: "https://ak-react-quotes.netlify.app/",
+    description: "A web app that fetches random quotes with the option to tweet the quote in one click.",
+    tech: ["React", "Bootstrap", "HTML5", "CSS3", "Git/GitHub"],
+  },
+  {
+    id: 3,
     image: mrkCBD,
     title: "CBD Brand Landing Page",
     github: "https://github.com/YSquid/mrk-landing",
     site: "https://mrkcbd.com/",
     description: "A one page site built with HTML and CSS for a CBD brand.",
     tech: ["HTML5", "CSS3", "Git/GitHub", "Google Analytics"],
-  }
+  },
 ];
 
 const Portfolio = () => {
