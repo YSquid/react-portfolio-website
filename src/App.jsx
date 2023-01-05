@@ -7,20 +7,17 @@ import Experience from "./components/experience/Experience";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
-import { initGA, GAPageView } from "./index";
+import ReactGA from 'react-ga';
+
+const trackingID = "G-DTNW0PWFKR";
+ReactGA.initialize(trackingID);
 
 const App = () => {
-  //calling initGA on page load
-  useEffect(() => {
-    initGA()
-    console.log('initGA effect');
-  }, []);
 
-  //calling GA pageview on load
-  useEffect(() => {
-    GAPageView("landing")
-    console.log('GAPageView effect');
-  }, []);
+  useEffect(()=> {
+    ReactGA.pageview(window.location.pathname)
+  }, [])
+  
   return (
     <div className="app">
       <Header />
