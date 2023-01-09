@@ -22,7 +22,7 @@ const Experience = () => {
             </article>
             <article className="experience__details">
               <div>
-                <h4>Javascript</h4>
+                <h4>JavaScript</h4>
               </div>
             </article>
             <article className="experience__details">
