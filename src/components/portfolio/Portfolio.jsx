@@ -3,6 +3,7 @@ import "./portfolio.css";
 import redditThumbnail from "../../assets/redditThumbnail.png";
 import mrkCBD from "../../assets/mrkCBD.png";
 import quoteMachine from '../../assets/quoteMachine.png'
+import appointmentPlanner from '../../assets/appointmentPlanner.png'
 
 const data = [
   {
@@ -25,6 +26,15 @@ const data = [
   },
   {
     id: 3,
+    image: appointmentPlanner,
+    title: "React Appointment Planner",
+    github: "https://github.com/YSquid/react-appointment-planner-challenge",
+    site: "https://ak-appointment-planner.netlify.app/",
+    description: "An appointment planning browser app built with React",
+    tech: ["React", "HTML5", "CSS3", "Git/GitHub"],
+  },
+  {
+    id: 4,
     image: mrkCBD,
     title: "CBD Brand Landing Page",
     github: "https://github.com/YSquid/mrk-landing",
