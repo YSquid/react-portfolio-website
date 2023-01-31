@@ -7,16 +7,9 @@ import Experience from "./components/experience/Experience";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
-import ReactGA from 'react-ga';
 
-const trackingID = "G-DTNW0PWFKR";
-ReactGA.initialize(trackingID);
 
 const App = () => {
-
-  useEffect(()=> {
-    ReactGA.pageview(window.location.pathname)
-  }, [])
   
   return (
     <div className="app">
