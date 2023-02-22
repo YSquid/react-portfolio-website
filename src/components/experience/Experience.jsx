@@ -54,7 +54,12 @@ const Experience = () => {
             </article>
             <article className="experience__details">
               <div>
-                <h4>PostgreSQL</h4>
+                <h4>PHP</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <div>
+                <h4>PostgreSQL/MySQL</h4>
               </div>
             </article>
           </div>
@@ -62,36 +67,26 @@ const Experience = () => {
         {/* END OF BACKEND */}
         
         <div className="other_tools">
-          <h3>Other Tools</h3>
+          <h3>Data Analytics</h3>
           <div className="experience__content">
             <article className="experience__details">
               <div>
-                <h4>Git/GitHub</h4>
+                <h4>Python</h4>
               </div>
             </article>
             <article className="experience__details">
               <div>
-                <h4>VSCode</h4>
+                <h4>SQL</h4>
               </div>
             </article>
             <article className="experience__details">
               <div>
-                <h4>Chrome Dev Tools</h4>
+                <h4>Excel</h4>
               </div>
             </article>
             <article className="experience__details">
               <div>
-                <h4>Node Package Manager</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <div>
-                <h4>Postman</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <div>
-                <h4>Excel/Google Sheets</h4>
+                <h4>Looker Studio</h4>
               </div>
             </article>
           </div>
@@ -107,11 +102,6 @@ const Experience = () => {
             </article>
             <article className="experience__details">
               <div>
-                <h4>Researching and Implementing Software</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <div>
                 <h4>Public Speaking</h4>
               </div>
             </article>
@@ -123,11 +113,6 @@ const Experience = () => {
             <article className="experience__details">
               <div>
                 <h4>Project and People Management</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <div>
-                <h4>Recruiting and Hiring</h4>
               </div>
             </article>
           </div>
