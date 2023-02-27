@@ -4,8 +4,19 @@ import redditThumbnail from "../../assets/redditThumbnail.png";
 import mrkCBD from "../../assets/mrkCBD.png";
 import quoteMachine from '../../assets/quoteMachine.png'
 import appointmentPlanner from '../../assets/appointmentPlanner.png'
+import ahmadsEats from '../../assets/ahmadsEats.png'
 
 const data = [
+  {
+    id: 5,
+    image: ahmadsEats,
+    title: "E-commerce Store",
+    github: "https://github.com/YSquid/ecomm-client",
+    site: "https://ahmads-eats.netlify.app/",
+    description: "A mock e-commerce store. Features - user registration/authentication, placing orders, and viewing order history.",
+    tech: ["React", "Node.js", "Express.js", "PostgreSQL", "HTML5", "CSS3", "Git/GitHub"],
+  },
+
   {
     id: 1,
     image: redditThumbnail,
