@@ -5,10 +5,34 @@ import mrkCBD from "../../assets/mrkCBD.png";
 import quoteMachine from '../../assets/quoteMachine.png'
 import appointmentPlanner from '../../assets/appointmentPlanner.png'
 import ahmadsEats from '../../assets/ahmadsEats.png'
+import dataSample from '../../assets/data-sample.jpg'
 
-const data = [
+const dataProjects = [
   {
-    id: 5,
+    id: 'dp-ex1',
+    image: dataSample,
+    type: 'powerBI',
+    title: "Data Sample 1",
+    preview: "https://github.com/YSquid/ecomm-client",
+    report: "https://ahmads-eats.netlify.app/",
+    description: "Placeholder 1",
+    tech: ["PowerBI", "Excel"],
+  },
+  {
+    id: 'dp-ex2',
+    image: dataSample,
+    type: 'python',
+    title: "Data Sample 2",
+    preview: "https://github.com/YSquid/ecomm-client",
+    report: "https://ahmads-eats.netlify.app/",
+    description: "Placeholder 2",
+    tech: ["PowerBI", "Python", "SQL"],
+  }
+]
+
+const webProjects = [
+  {
+    id: 'wd-eats',
     image: ahmadsEats,
     title: "E-commerce Store",
     github: "https://github.com/YSquid/ecomm-client",
@@ -18,7 +42,7 @@ const data = [
   },
 
   {
-    id: 1,
+    id: 'wd-reddit',
     image: redditThumbnail,
     title: "Reddit Clone",
     github: "https://github.com/YSquid/reddit-minimal",
@@ -27,7 +51,7 @@ const data = [
     tech: ["React", "Redux", "HTML5", "CSS3", "Git/GitHub", "Google Analytics"],
   },
   {
-    id: 2,
+    id: 'wd-quote',
     image: quoteMachine,
     title: "Random Quote Machine",
     github: "https://github.com/YSquid/react-quote-machine",
@@ -36,7 +60,7 @@ const data = [
     tech: ["React", "Bootstrap", "HTML5", "CSS3", "Git/GitHub"],
   },
   {
-    id: 3,
+    id: 'wd-appt',
     image: appointmentPlanner,
     title: "React Appointment Planner",
     github: "https://github.com/YSquid/react-appointment-planner-challenge",
@@ -45,7 +69,7 @@ const data = [
     tech: ["React", "HTML5", "CSS3", "Git/GitHub"],
   },
   {
-    id: 4,
+    id: 'wd-cbd',
     image: mrkCBD,
     title: "CBD Brand Landing Page",
     github: "https://github.com/YSquid/mrk-landing",
@@ -60,8 +84,49 @@ const Portfolio = () => {
     <section id="portfolio">
       <h2>Portfolio</h2>
 
-      <div className="container portfolio__container">
-        {data.map(({ id, image, title, github, site, description, tech }) => {
+      <h3>Data Projects</h3>
+      <div className="container portfolio__container data__projects">
+        {dataProjects.map(({ id, type, image, title, preview ,report, description, tech }) => {
+          return (
+            <article key={id} className="portfolio__item">
+              <div className="portfolio__item-img">
+                <a href={preview} target="_blank" rel="noreferrer">
+                  <img src={image} alt={title} />
+                </a>
+              </div>
+              <h3>{title}</h3>
+              <p className="project__description">{description} {type === "powerBI" ? <p>Note: PowerBI license required to view from report link</p> : null}</p>
+              <ul className="tech">
+                {tech.map((elem) => {
+                  return <li className="tech__item">{elem}</li>;
+                })}
+              </ul>
+              <div className="portfolio__item-cta">
+                <a
+                  href={report}
+                  className="btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Report Link
+                </a>
+                <a
+                  href={preview}
+                  className="btn btn-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Static Preview
+                </a>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+      
+      <h3>Web Development Projects</h3>
+      <div className="container portfolio__container web__projects">
+        {webProjects.map(({ id, image, title, github, site, description, tech }) => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-img">
