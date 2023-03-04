@@ -5,29 +5,20 @@ import mrkCBD from "../../assets/mrkCBD.png";
 import quoteMachine from '../../assets/quoteMachine.png'
 import appointmentPlanner from '../../assets/appointmentPlanner.png'
 import ahmadsEats from '../../assets/ahmadsEats.png'
-import dataSample from '../../assets/data-sample.jpg'
+import FinancialReport from '../../assets/Financial-Report.zip'
+import salesData from '../../assets/sales-data.png'
 
 const dataProjects = [
   {
     id: 'dp-ex1',
-    image: dataSample,
+    image: salesData,
     type: 'powerBI',
-    title: "Data Sample 1",
+    title: "Sales Data Analysis",
     preview: "https://github.com/YSquid/ecomm-client",
-    report: "https://ahmads-eats.netlify.app/",
-    description: "Placeholder 1",
-    tech: ["PowerBI", "Excel"],
+    report: FinancialReport,
+    description: "Analysis of example sales data provided by Microsoft. Data was imported, visualized, and analyzed in Power BI. An accompanying PowerPoint presentation summarizes the data and provides recommendations based on the analysis.",
+    tech: ["PowerBI", "Excel", "PowerPoint"],
   },
-  {
-    id: 'dp-ex2',
-    image: dataSample,
-    type: 'python',
-    title: "Data Sample 2",
-    preview: "https://github.com/YSquid/ecomm-client",
-    report: "https://ahmads-eats.netlify.app/",
-    description: "Placeholder 2",
-    tech: ["PowerBI", "Python", "SQL"],
-  }
 ]
 
 const webProjects = [
@@ -90,12 +81,12 @@ const Portfolio = () => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-img">
-                <a href={preview} target="_blank" rel="noreferrer">
+               
                   <img src={image} alt={title} />
-                </a>
+                
               </div>
               <h3>{title}</h3>
-              <p className="project__description">{description} {type === "powerBI" ? <p>Note: PowerBI license required to view from report link</p> : null}</p>
+              <p className="project__description">{description} {type === "powerBI" ? <p>Note: PowerBI license required to view Power BI report</p> : null}</p>
               <ul className="tech">
                 {tech.map((elem) => {
                   return <li className="tech__item">{elem}</li>;
@@ -104,19 +95,11 @@ const Portfolio = () => {
               <div className="portfolio__item-cta">
                 <a
                   href={report}
-                  className="btn"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Report Link
-                </a>
-                <a
-                  href={preview}
                   className="btn btn-primary"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Static Preview
+                  Download Files
                 </a>
               </div>
             </article>
