@@ -86,7 +86,7 @@ const Experience = () => {
             </article>
             <article className="experience__details">
               <div>
-                <h4>Looker Studio</h4>
+                <h4>Power BI</h4>
               </div>
             </article>
           </div>

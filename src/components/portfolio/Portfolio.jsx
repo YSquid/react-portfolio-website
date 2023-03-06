@@ -16,8 +16,8 @@ const dataProjects = [
     title: "Sales Data Analysis",
     preview: "https://github.com/YSquid/ecomm-client",
     report: FinancialReport,
-    description: "Analysis of example sales data provided by Microsoft. Data was imported, visualized, and analyzed in Power BI. An accompanying PowerPoint presentation summarizes the data and provides recommendations based on the analysis.",
-    tech: ["PowerBI", "Excel", "PowerPoint"],
+    description: "Analysis of sales data using Power BI and presented in PowerPoint",
+    tech: ["PowerBI",  "PowerPoint", "Excel"],
   },
 ]
 
